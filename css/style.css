@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url(/Images/istockphoto-623215962-612x612.jpg);
+
+}
+
+div.container{
+	color: #D61A46;
+	text-align: center;
+	font-size: 40px;
+	padding: 8px;
+}
+
+div.symbol,
+div.playerNum{
+	color: #341C09;
+	background-color: #559E54;
+	text-align: center;
+	margin: 10% 30% 20% 30%;
+	padding: 20px 20px 20px 20px;
+	font-size: 25px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 #D61A46;
+}
+
+#X, #O {
+  display: inline-block;
+	background-color: #F7D4DC;
+	color: #FC7307;
+  font-size: 40px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  padding-top: 20px;
+	width: 48%;
+	height: 85px;
+} 
+
+#single , #multi{
+	display: inline-block;
+	background-color: #F7D4DC;
+	color: #FC7307;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 2px;
+	padding-top: 25px;
+	padding-bottom: 3px;
+	width: 48%;
+	height: 80px;
+}
+
+#single:hover , #multi:hover ,
+span#X:hover , span#O:hover, .replay:hover{
+	transform: scale(0.98);
+  cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F7D4DC;
+}
+td {
+	border: 4px solid #341C09;
+	width: 100px;
+	height:100px;
+}
+
+table tr td:first-child{
+	border-left: 0;
+}
+table tr td:last-child{
+	border-right: 0;
+}
+table tr:first-child td{
+	border-top: 0;
+}
+table tr:last-child td{
+	border-bottom: 0;
+}
+
+td:hover {
+	background-color: #559E54;
+}
+
+#name {
+	background-color: #F7D4DC;
+  color: #FC7307;
+  font-size: 30px;
+	border-radius: 10px;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 #D61A46;
+}
+.winner {
+  background-color: #341C09;
+  border-radius: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 #D61A46;
+}
+
+.replay {
+	display: none;
+	color: #341C09;
+	background-color: #559E54;
+	text-align: center;
+	margin-top:  6%;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 20px 20px 20px 20px;
+	font-size: 25px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 #D61A46;
+}
